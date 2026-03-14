@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Use relative path so Vite can proxy /api to the backend (avoids CORS issues)
 const api = axios.create({
-  baseURL: "/api",
+  baseURL: "https://calender-event-manager-backend.onrender.com/api",
   headers: {
     "Content-Type": "application/json",
   },
