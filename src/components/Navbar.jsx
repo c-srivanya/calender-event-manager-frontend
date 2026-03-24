@@ -13,8 +13,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 flex items-center justify-between p-4 backdrop-blur-md bg-background/80 border-b border-border/50 shadow-lg">
-      <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent">
+    <nav className="sticky top-0 z-50 flex items-center justify-between px-6 py-4 glass backdrop-blur-xl shadow-glass-1 glass-hover rounded-b-genz-xl animate-slideUp">
+      <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-pastel-500 via-sky-400 to-blue-500 bg-clip-text text-transparent drop-shadow-genz">
         📅 Calendar
       </Link>
 

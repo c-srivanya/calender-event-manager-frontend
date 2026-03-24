@@ -33,9 +33,9 @@ function App() {
   }, [darkMode])
 
   return (
-    <div className={darkMode ? 'dark' : ''}>
-      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Router>
+    <Router>
+      <div className={darkMode ? 'dark' : ''}>
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <Routes>
           <Route path="/" element={<Navigate to="/dashboard" replace />} />
           <Route path="/login" element={<Login />} />
@@ -46,8 +46,8 @@ function App() {
           <Route path="/edit-event/:id" element={<RequireAuth><CreateEvent /></RequireAuth>} />
           <Route path="*" element={<Navigate to="/dashboard" replace />} />
         </Routes>
-      </Router>
-    </div>
+      </div>
+    </Router>
   )
 }
 
